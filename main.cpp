@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <queue>
+
 using namespace std;
 
 void escribirSwitch(int, ofstream*);
@@ -91,10 +91,10 @@ void  escribirSwitch( int n, ofstream *cpp_file){
     *cpp_file << "\n\t\t switch(option){";
 
     for(int i = 1; i<n; i++) {
-    *cpp_file << "\n\t\t\t case ";
-    *cpp_file << to_string(i);
-    *cpp_file << ":";
-    *cpp_file << "\n\t\t\t\t break;";
+    	*cpp_file << "\n\t\t\t case ";
+    	*cpp_file << to_string(i);
+    	*cpp_file << ":";
+    	*cpp_file << "\n\t\t\t\t break;";
 
     }
 
@@ -104,13 +104,13 @@ void  escribirSwitch( int n, ofstream *cpp_file){
     *cpp_file << "\n\t\t\t\t salir = true;";
     *cpp_file << "\n\t\t\t\t break;";
 
-       *cpp_file << "\n\t\t\t default";
+    *cpp_file << "\n\t\t\t default";
     *cpp_file << ":";
     *cpp_file << "\n\t\t\t\t break;";
 
 
 
     *cpp_file << "\n";
-      *cpp_file << "\n\t\t  }";
+    *cpp_file << "\n\t\t  }";
 }
 
